@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+header {
+  background-color: #f0ecf4;
+  padding: 0.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cla-do-pe-banner {
+  height: 5.6rem;
+}
+.marcar-amistoso {
+  background-color: #e76f51;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+}
+.marcar-amistoso:hover {
+  background-color: #f57a15;
+}
+nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+nav li {
+  position: relative;
+}
+nav a {
+  color: #003366;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 0.6rem;
+  transition: color 0.7s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 0;
+  height: 0.3rem;
+  background-color: #e76f51; /* Red color */
+  transition: width 0.6s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
