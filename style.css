@@ -110,3 +110,47 @@ nav a:hover::after {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+.item-menu {
+  text-align: center;
+  color: #003366;
+  font-weight: 900;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 0.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: -0.1px -0.1px 0 #000, 0.1px -0.1px 0 #000, -0.1px 0.1px 0 #000,
+    0.1px 0.1px 0 #000;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carrosel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.carrosel:hover .carrosel-slide {
+  animation-play-state: paused;
+}
+.carrosel-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+.carrosel-slide img {
+  height: 25rem;
+  margin: 0 3.5rem;
+}
