@@ -154,3 +154,24 @@ nav a:hover::after {
   height: 25rem;
   margin: 0 3.5rem;
 }
+.jogadas-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.video-vertical,
+.video-horizontal {
+  border: 1px solid gray;
+  border-radius: 5%;
+}
+.video-vertical {
+  height: 40rem;
+  width: auto;
+  margin-top: 0.8rem;
+}
+.video-horizontal {
+  width: 80rem;
+  height: auto;
+}
