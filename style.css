@@ -75,6 +75,9 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+.material-symbols-outlined {
+  top: -20px;
+}
 .hero-section {
   position: relative;
   width: 100%;
@@ -174,4 +177,91 @@ nav a:hover::after {
 .video-horizontal {
   width: 80rem;
   height: auto;
+  margin-bottom: 0.8rem;
+}
+.footer-container h1 {
+  margin-bottom: 0.8rem;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #d7f2d7;
+}
+.form-container {
+  background: #d7f2d7;
+  padding: 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+input,
+textarea {
+  margin-bottom: 0.8rem;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  border-color: #0a5703;
+  box-shadow: 0 0 3px rgba(60, 122, 8, 0.5);
+}
+.send-msg-button {
+  background-color: #0a5703;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.send-msg-button:hover {
+  background-color: #46911b;
+}
+.whatsapp-container {
+  grid-column-start: 2;
+  text-align: center;
+  background: #d7f2d7;
+  padding: 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.whatsapp-h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #0a5703;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: -0.1px -0.1px 0 #000, 0.1px -0.1px 0 #000, -0.1px 0.1px 0 #000,
+    0.1px 0.1px 0 #000;
+}
+.whatsapp-ico {
+  color: #25d366;
+  height: 15rem;
+  width: auto;
+  transition: color 0.6s ease;
+}
+.whatsapp-button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.whatsapp-ico:hover {
+  color: #46911b;
+}
+.footer-bottom {
+  background-color: #bfd8af;
+  border-top: 1px solid #99bc85;
+  padding: 0.3rem;
+  text-align: center;
 }
