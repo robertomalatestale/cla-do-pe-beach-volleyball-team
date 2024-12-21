@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font: inherit;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #d4e7c5;
   font-family: "Rubik", sans-serif;

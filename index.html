@@ -14,11 +14,11 @@
   <body>
     <header>
       <img class ="cla-do-pe-banner" src="cla-do-pe-banner.png" alt="Logo do time Clã do Pé">
-      <button class="marcar-amistoso">Marque um amistoso!</button>
+      <button class="marcar-amistoso" onClick="document.getElementById('amistoso').scrollIntoView();">Marque um amistoso!</button>
     </header>
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#">Inicio</a></li>
         <li><a href="#ocla">O Clã</a></li>
         <li><a href="#ultimasjogadas">Últimas jogadas</a></li>
         <li><a href="#historicodepartidas">Histórico de partidas<span class="material-symbols-outlined">
@@ -33,7 +33,7 @@
           <h1>ONDE TUDO COMEÇOU</h1>
         </div>
       </div>
-      <h1 class="jogadores item-menu">O CLÃ</h1>
+      <h1 class="jogadores item-menu" id="ocla">O CLÃ</h1>
       <div class="carrosel">
         <div class="carrosel-slide">
           <img src="Cartão dos Jogadores/Aveia.png">
@@ -54,8 +54,8 @@
           <img src="Cartão dos Jogadores/Ralf.png">
         </div>
       </div>
-      <h1 class="ultimas-jogadas item-menu">ÚLTIMAS JOGADAS</h1>
-      <div class="jogadas-container">
+      <h1 class="ultimas-jogadas item-menu" id="ultimasjogadas">ÚLTIMAS JOGADAS</h1>
+      <div class="jogadas-container" >
         <video src="Jogadas do Time/20241201_123048.mp4" class="video-vertical" controls muted loop autoplay></video>
         <video src="Jogadas do Time/OlhoNoLance-2024-11-21-22-05-46.mp4" class="video-vertical" controls muted loop autoplay></video>
         <video src="Jogadas do Time/OlhoNoLance-2024-11-02-18-58-06 horizontal.mp4" class="video-horizontal" controls muted loop autoplay></video>
@@ -63,7 +63,7 @@
     </main>
     <footer>
       <div class="footer-container">
-        <h1 class="item-menu">MARQUE UM AMISTOSO</h1>
+        <h1 class="item-menu" id="amistoso">MARQUE UM AMISTOSO</h1>
         <div class="footer-top">
           <div class="form-container">
           <form action="index.html" method="GET"> <!--TODO: Actually implements a form logic -->
