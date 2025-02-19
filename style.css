@@ -268,3 +268,115 @@ textarea:focus {
   padding: 0.3rem;
   text-align: center;
 }
+
+/* From here it's about: "matchhistory.html*/
+
+.hist-titulo {
+  margin-bottom: 1rem;
+}
+#msg-nomatches {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form-container-hist {
+  display: flex;
+  align-items: center;
+  gap: 0.63rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.form-container-hist label {
+  font-weight: bold;
+}
+.form-container-hist input[type="number"] {
+  width: 3.2rem;
+  padding: 0.32rem;
+}
+.form-container-hist input[type="text"],
+.form-container-hist input[type="date"] {
+  width: 9.4rem;
+  padding: 0.32rem;
+}
+.add-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-bottom: 1rem;
+}
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-button {
+  font-size: 1rem;
+  padding: 0.05rem 0.2rem;
+}
+.match-history {
+  margin-top: 1.25rem;
+}
+.match-entry {
+  padding: 0.63rem;
+  margin-bottom: 0.63rem;
+  border-radius: 0.32rem;
+}
+.match-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.match-header span {
+  font-size: 1rem;
+}
+.match-header button {
+  margin-left: 0.32rem;
+}
+.dropdown-content {
+  margin-top: 0.63rem;
+  padding: 0.63rem;
+  border: 1px solid #99bc85;
+  border-radius: 5px;
+  background-color: #d4e7c5;
+  display: none;
+}
+.set-entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.set-entry label {
+  font-weight: bold;
+}
+.set-entry input {
+  width: 3.2rem;
+  padding: 0.32rem;
+  text-align: center;
+}
+.set-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+.set-form input {
+  width: 10rem;
+  padding: 0.32rem;
+  text-align: center;
+}
+.footer-hist {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

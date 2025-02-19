@@ -25,5 +25,23 @@
           open_in_new
           </span></a></li>
     </nav>
+    <main>
+  <h1 class="item-menu hist-titulo">HISTÓRICO DE PARTIDAS</h1>
+  <div class="form-container-hist">
+    <label>Clã do Pé</label>
+    <input type="number" id="ourSets" placeholder="Sets Vencidos" required min="0">
+    <input type="number" id="opponentSets" placeholder="Sets Vencidos" required min="0">
+    <input type="text" id="opponentName" placeholder="Equipe Adversária" required>
+    <input type="date" id="matchDate" required>
+    <button class="add-button" onclick="addMatch()">Adicionar Partida</button>
+  </div>
+  <div class="match-history" id="matchHistory">
+    <p id="msg-nomatches">Sem partidas para exibir no momento</p>
+  </div>
+</main>
+    <div class="footer-bottom footer-hist">
+      <p>Copyright &copy;<span id="footer-year"></span> Feito por <a href="https://www.linkedin.com/in/roberto-malatesta/" target="_blank">Roberto Malatesta</a></p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
