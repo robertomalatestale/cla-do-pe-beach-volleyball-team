@@ -380,3 +380,6 @@ textarea:focus {
   bottom: 0;
   width: 100%;
 }
+.team {
+  font-weight: 700;
+}

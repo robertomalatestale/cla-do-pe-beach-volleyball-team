@@ -31,7 +31,7 @@ function renderMatches() {
 
     matchEntry.innerHTML = `
           <div class="match-header">
-            <span>Clã do Pé (${match.ourSets}) x ${match.opponentName} (${match.opponentSets}) - ${match.matchDate}</span>
+            <span><strong class="team">Clã do Pé</strong> (${match.ourSets}) x (${match.opponentSets}) <strong class="team">${match.opponentName}</strong> - ${match.matchDate}</span>
             <div>
               <button class="toggle-button" onclick="toggleDropdown(${match.id}, this)">▼</button>
               <button class="toggle-button" style="background-color: red;" onclick="deleteMatch(${match.id})">X</button>
